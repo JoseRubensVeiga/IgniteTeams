@@ -1,11 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import { Groups } from '@screens/Groups'
-
-export default function App() {
+export function Groups() {
   return (
     <View style={styles.container}>
-      <Groups />
+      <Text>Groups!</Text>
     </View>
   );
 }
