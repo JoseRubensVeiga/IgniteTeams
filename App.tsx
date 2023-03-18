@@ -1,5 +1,7 @@
+import { StatusBar, View } from 'react-native';
 import { ThemeProvider } from 'styled-components/native'
 
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import { Groups } from '@screens/Groups'
@@ -16,8 +18,14 @@ export default function App() {
 
   
   return (
-    <ThemeProvider theme={theme}>
-        { fontsLoaded ? <Groups /> : <Loading />}
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ThemeProvider theme={theme}>
+        <StatusBar
+          backgroundColor='transparent'
+          translucent
+        />
+          { fontsLoaded ? <Groups /> : <Loading />}
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 }
