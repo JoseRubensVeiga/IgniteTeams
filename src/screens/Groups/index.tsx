@@ -4,6 +4,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Container } from './styles';
 import Highlight from '@components/HighLight';
+import GroupCard from '@components/GroupCard';
 
 export function Groups() {
 
@@ -15,7 +16,12 @@ export function Groups() {
         <Header />
         <Highlight
           title="Turmas"
-          subtitle='Jogue com a sua turma'/>
+          subtitle='Jogue com a sua turma'
+        />
+
+        <GroupCard
+          title="Galera do Ignite"
+        />
       </View>
     </Container>
   );
