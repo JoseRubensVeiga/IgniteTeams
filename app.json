@@ -1,9 +1,0 @@
-{
-    "expo": {
-        "splash": {
-            "image": "./src/assets/logo@3x.png",
-            "resizeMode": "contain",
-            "backgroundColor": "#202024"
-        }
-    }
-}
