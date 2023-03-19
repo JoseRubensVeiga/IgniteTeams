@@ -6,8 +6,9 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/
 
 import theme from './src/theme';
 import Loading from '@components/Loading';
-import NewGroup from '@screens/NewGroup';
 import CustomSafeArea from '@components/CustomSafeArea';
+import NewGroup from '@screens/NewGroup';
+import Groups from '@screens/Groups';
 import Players from '@screens/Players';
 
 
