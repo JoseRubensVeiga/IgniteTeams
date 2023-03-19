@@ -8,6 +8,7 @@ import theme from './src/theme';
 import Loading from '@components/Loading';
 import NewGroup from '@screens/NewGroup';
 import CustomSafeArea from '@components/CustomSafeArea';
+import Players from '@screens/Players';
 
 
 export default function App() {
@@ -26,7 +27,7 @@ export default function App() {
           translucent
         />
         <CustomSafeArea />
-          { fontsLoaded ? <NewGroup /> : <Loading />}
+          { fontsLoaded ? <Players /> : <Loading />}
       </ThemeProvider>
     </SafeAreaProvider>
   );
