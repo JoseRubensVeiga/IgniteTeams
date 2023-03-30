@@ -20,7 +20,6 @@ const Players = () => {
     'Pessoa D',
     'Pessoa E',
     'Pessoa F',
-    'Pessoa G',
   ]);
 
   return (
