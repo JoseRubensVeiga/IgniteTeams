@@ -8,7 +8,7 @@ interface Props extends TouchableOpacityProps {
 
 const Button = ({title, type = 'PRIMARY', ...rest}: Props) => {
     return (
-        <Container type={type} {...rest}>
+        <Container {...rest} type={type} >
             <Title>{title}</Title>
         </Container>
     );

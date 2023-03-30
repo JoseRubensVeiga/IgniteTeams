@@ -7,9 +7,7 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/
 import theme from './src/theme';
 import Loading from '@components/Loading';
 import CustomSafeArea from '@components/CustomSafeArea';
-import NewGroup from '@screens/NewGroup';
-import Groups from '@screens/Groups';
-import Players from '@screens/Players';
+import Routes from './src/routes';
 
 
 export default function App() {
@@ -18,7 +16,6 @@ export default function App() {
     Roboto_400Regular,
     Roboto_700Bold,
   }); 
-
   
   return (
     <SafeAreaProvider>
@@ -28,7 +25,7 @@ export default function App() {
           translucent
         />
         <CustomSafeArea />
-          { fontsLoaded ? <Players /> : <Loading />}
+          { fontsLoaded ? <Routes /> : <Loading /> }
       </ThemeProvider>
     </SafeAreaProvider>
   );

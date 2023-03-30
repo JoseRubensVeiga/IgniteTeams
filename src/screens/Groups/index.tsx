@@ -7,9 +7,15 @@ import GroupCard from '@components/GroupCard';
 import { useState } from 'react';
 import ListEmpty from '@components/ListEmpty';
 import Button from '@components/Button';
+import { useNavigation } from '@react-navigation/native';
 
 const Groups = () => {
+  const navigation = useNavigation();
   const [groups, setGroups] = useState(["Turma 01", "Turma 02"]);
+
+  function handleNewGroup(): void {
+    navigation.navigate('new');
+  }
 
   return (
     <Container>
@@ -30,6 +36,7 @@ const Groups = () => {
 
         <Button
           title="Criar nova turma!"
+          onPress={handleNewGroup}
         />
         
     </Container>
